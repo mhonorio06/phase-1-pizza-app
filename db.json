@@ -1,38 +1,39 @@
 {
-    "pizzas": [
+  "pizzas": [
     {
-        "id": 1,
-        "name": "Supreme",
-        "image": "https://i0.wp.com/blog.slicelife.com/wp-content/uploads/2019/06/supreme-pizza-toppings.jpg?w=1200&ssl=1",
-        "likes": 1
+      "id": 1,
+      "name": "Supreme",
+      "image": "https://i0.wp.com/blog.slicelife.com/wp-content/uploads/2019/06/supreme-pizza-toppings.jpg?w=1200&ssl=1",
+      "likes": 22,
+      "dislikes": 15
     },
     {
-        "id": 2,
-        "name": "Margherita",
-        "image": "https://img.sunset02.com/sites/default/files/image/recipes/su/10/02/pizzetta-margherita-pizza-su-x.jpg",
-        "likes": 1
-
-    }, 
-    {
-        "id": 3,
-        "name": "All-the-Meats",
-        "image": "https://media.30seconds.com/tip/lg/Italian-Meat-Lovers-Pizza-Recipe-49532-17e2ab1133-1661546146.jpg",
-        "likes": 1
-
+      "id": 2,
+      "name": "Margherita",
+      "image": "https://img.sunset02.com/sites/default/files/image/recipes/su/10/02/pizzetta-margherita-pizza-su-x.jpg",
+      "likes": 11,
+      "dislikes": 7
     },
     {
-        "id": 4,
-        "name": "Hawaiian",
-        "image": "https://img.kidspot.com.au/52lezcwU/w643-h428-cfill-q90/kk/2015/03/hawaiian-pizza-recipe-605894-2.jpg",
-        "likes": 1
-
+      "id": 3,
+      "name": "All-the-Meats",
+      "image": "https://media.30seconds.com/tip/lg/Italian-Meat-Lovers-Pizza-Recipe-49532-17e2ab1133-1661546146.jpg",
+      "likes": 7,
+      "dislikes": 5
     },
     {
-        "id": 5,
-        "name": "Buffalo Chicken",
-        "image": "https://i0.wp.com/weirdandwildpizza.com/wp-content/uploads/2020/10/MAIN.jpg?w=1480&ssl=1",
-        "likes": 1
-
-    } 
-    ]
+      "id": 4,
+      "name": "Hawaiian",
+      "image": "https://img.kidspot.com.au/52lezcwU/w643-h428-cfill-q90/kk/2015/03/hawaiian-pizza-recipe-605894-2.jpg",
+      "likes": 6,
+      "dislikes": 6
+    },
+    {
+      "id": 5,
+      "name": "Buffalo Chicken",
+      "image": "https://i0.wp.com/weirdandwildpizza.com/wp-content/uploads/2020/10/MAIN.jpg?w=1480&ssl=1",
+      "likes": 7,
+      "dislikes": 5
+    }
+  ]
 }

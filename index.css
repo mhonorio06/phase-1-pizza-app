@@ -1,1 +1,22 @@
+body {
+    margin: 0;
+    background-color: grey;
+}
+header{
+    text-align: center;
+}
+img{
+    width: 150px;
+    size-adjust: 25px;
+}
+.card{
+    margin: 75px; color: black;
+    float:left;
+    padding: 5px;
+    border: 25px;
+    box-shadow: 2rem 2rem;
+}
+.container{
+    text-align: center;
+}
 
