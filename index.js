@@ -27,8 +27,7 @@ function renderPizza(pizza) {
     card.innerHTML = `
     
     <h4> ${pizza.name} </h4>
-    <img src="${pizza.image}" class="image" onmouseover="bgImg()" onmouseout="normImg()"
-    />
+    <img src="${pizza.image}" id="image" onmouseover="bgImg()" onmouseout="normImg()"/>
     <br>
     <p>${pizza.likes}👍 ${pizza.dislikes}👎 Votes</p>
     <button class="like-btn" id="${likeButtonId}">Like</button>
@@ -43,9 +42,6 @@ function renderPizza(pizza) {
     document.getElementById(likeButtonId).addEventListener("click", event => {
         likeEvent(pizza.id)
     })
-    // document.getElementById("image").addEventListener("mouseover", event => {
-    //     imgEvent(pizza.id)
-    // })
 
 }
 function addNewPizza(event) {
@@ -70,12 +66,18 @@ function addNewPizza(event) {
         .then(renderPizza)  
     }
     function bgImg() {
-        document.querySelector(".image").style.height = "500px";
-        document.querySelector(".image").style.width = "500px";
+        let images = document.querySelectorAll("#image")
+        images.forEach(image => {
+            image.style.height = "350px";
+            image.style.width = "350px";
+        })  
     }
     function normImg() {
-        document.querySelector(".image").style.width = "200px";
-        document.querySelector(".image").style.height = "200px";
+        let images = document.querySelectorAll("#image")
+        images.forEach(image => {
+            image.style.height = "200px";
+            image.style.width = "200px";
+        })
     }
     function likeEvent(event) {
         const pizza = pizzas.find(pizza => pizza.id === event)

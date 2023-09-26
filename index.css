@@ -7,11 +7,13 @@ header{
 }
 img{
     width: 200px;
-    height:200px;
+    height: 200px;
+    display: block;
 }
 .card{
     text-align: center;
     float:left;
+    box-shadow: 1rem 1rem 1rem 1rem;
 }
 .container{
     text-align: center;
