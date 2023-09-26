@@ -37,12 +37,6 @@ function renderPizza(pizza) {
     
     pizzaCollection.append(card);
 
-    // document.querySelectorAll("#image").addEventListener("mouseover", event => {
-    //     bgImg(pizza.image)
-    // })
-    // document.querySelectorAll("#image").addEventListener("mouseout", event => {
-    //     normImg(pizza.image)
-    // })
     document.getElementById(dislikeButtonId).addEventListener("click", event => {
         dislikeEvent(pizza.id)
     })
