@@ -16,6 +16,7 @@ fetch(objUrl)
 
 
 function renderPizzas() {
+    pizzaCollection.innerHTML = ' ';
     pizzas.forEach(renderPizza)
 }
 function renderPizza(pizza) {
@@ -23,9 +24,11 @@ function renderPizza(pizza) {
     card.classList.add('card')
     const likeButtonId = `like-button-${pizza.id}`
     const dislikeButtonId = `dislike-button-${pizza.id}`
-    card.innerHTML = ` 
-    <h2> ${pizza.name} </h2>
-    <img src="${pizza.image}"
+    card.innerHTML = `
+    
+    <h4> ${pizza.name} </h4>
+    <img src="${pizza.image}" class="image" onmouseover="bgImg()" onmouseout="normImg()"
+    />
     <br>
     <p>${pizza.likes}👍 ${pizza.dislikes}👎 Votes</p>
     <button class="like-btn" id="${likeButtonId}">Like</button>
@@ -34,17 +37,25 @@ function renderPizza(pizza) {
     
     pizzaCollection.append(card);
 
+    // document.querySelectorAll("#image").addEventListener("mouseover", event => {
+    //     bgImg(pizza.image)
+    // })
+    // document.querySelectorAll("#image").addEventListener("mouseout", event => {
+    //     normImg(pizza.image)
+    // })
     document.getElementById(dislikeButtonId).addEventListener("click", event => {
         dislikeEvent(pizza.id)
     })
     document.getElementById(likeButtonId).addEventListener("click", event => {
         likeEvent(pizza.id)
     })
+    // document.getElementById("image").addEventListener("mouseover", event => {
+    //     imgEvent(pizza.id)
+    // })
 
 }
 function addNewPizza(event) {
     event.preventDefault()
-
     const form = event.target
     const newPizza = {
         name: form.name.value,
@@ -52,6 +63,7 @@ function addNewPizza(event) {
         likes: 0,
         dislikes: 0
     };
+    form.reset()
     fetch(objUrl, {
         headers: {
             Accept: "application/json",
@@ -63,9 +75,17 @@ function addNewPizza(event) {
         .then(resp => resp.json())
         .then(renderPizza)  
     }
+    function bgImg() {
+        document.querySelector(".image").style.height = "500px";
+        document.querySelector(".image").style.width = "500px";
+    }
+    function normImg() {
+        document.querySelector(".image").style.width = "200px";
+        document.querySelector(".image").style.height = "200px";
+    }
     function likeEvent(event) {
-   const pizza = pizzas.find(pizza => pizza.id === event)
-   fetch(`${objUrl}/${event}`, {
+        const pizza = pizzas.find(pizza => pizza.id === event)
+        fetch(`${objUrl}/${event}`, {
         headers: {
             Accept: "application/json",
             "Content-Type": "application/json"
@@ -96,12 +116,11 @@ function dislikeEvent(event){
     .then(resp => resp.json())
     .then(json => {
         pizza.dislikes = json.dislikes;
-        renderPizzas();
+        renderPizzas()
     })
 }
     
     pizzaForm.addEventListener("submit", addNewPizza)
-
-    getPizza()
+    getPizza();
 
 

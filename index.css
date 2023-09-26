@@ -6,15 +6,12 @@ header{
     text-align: center;
 }
 img{
-    width: 150px;
-    size-adjust: 25px;
+    width: 200px;
+    height:200px;
 }
 .card{
-    margin: 75px; color: black;
+    text-align: center;
     float:left;
-    padding: 5px;
-    border: 25px;
-    box-shadow: 2rem 2rem;
 }
 .container{
     text-align: center;

@@ -4,36 +4,50 @@
       "id": 1,
       "name": "Supreme",
       "image": "https://i0.wp.com/blog.slicelife.com/wp-content/uploads/2019/06/supreme-pizza-toppings.jpg?w=1200&ssl=1",
-      "likes": 22,
-      "dislikes": 15
+      "likes": 30,
+      "dislikes": 9
     },
     {
       "id": 2,
       "name": "Margherita",
       "image": "https://img.sunset02.com/sites/default/files/image/recipes/su/10/02/pizzetta-margherita-pizza-su-x.jpg",
-      "likes": 11,
-      "dislikes": 7
+      "likes": 6,
+      "dislikes": 3
     },
     {
       "id": 3,
       "name": "All-the-Meats",
       "image": "https://media.30seconds.com/tip/lg/Italian-Meat-Lovers-Pizza-Recipe-49532-17e2ab1133-1661546146.jpg",
-      "likes": 7,
-      "dislikes": 5
+      "likes": 9,
+      "dislikes": 8
     },
     {
       "id": 4,
       "name": "Hawaiian",
       "image": "https://img.kidspot.com.au/52lezcwU/w643-h428-cfill-q90/kk/2015/03/hawaiian-pizza-recipe-605894-2.jpg",
-      "likes": 6,
-      "dislikes": 6
+      "likes": 10,
+      "dislikes": 7
     },
     {
       "id": 5,
       "name": "Buffalo Chicken",
       "image": "https://i0.wp.com/weirdandwildpizza.com/wp-content/uploads/2020/10/MAIN.jpg?w=1480&ssl=1",
-      "likes": 7,
-      "dislikes": 5
+      "likes": 12,
+      "dislikes": 10
+    },
+    {
+      "name": " bbq pizza",
+      "image": "https://hips.hearstapps.com/hmg-prod/images/bbq-pizza-342-1659557925.jpg?crop=0.954xw:0.637xh;0.0204xw,0.278xh&resize=980:*",
+      "likes": 5,
+      "dislikes": 18,
+      "id": 6
+    },
+    {
+      "name": " bbq pizza",
+      "image": "https://hips.hearstapps.com/hmg-prod/images/bbq-pizza-342-1659557925.jpg?crop=0.954xw:0.637xh;0.0204xw,0.278xh&resize=980:*",
+      "likes": 4,
+      "dislikes": 4,
+      "id": 7
     }
   ]
 }
