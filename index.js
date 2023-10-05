@@ -39,17 +39,14 @@ function renderPizza(pizza) {
     pizzaCollection.append(card);
 
     document.getElementById(dislikeButtonId).addEventListener("click", event => {
-        dislikeEvent(pizza.id)
+    dislikeEvent(pizza.id)
     })
     document.getElementById(likeButtonId).addEventListener("click", event => {
-        likeEvent(pizza.id)
+    likeEvent(pizza.id)
     })
-    document.getElementById(image).addEventListener("mouseover", event => {
-        mouseoverEvent(pizza.id)
-    })
-    document.getElementById(image).addEventListener("mouseout", event => {
-        mouseoutEvent(pizza.id)
-    })
+    document.getElementById(image).addEventListener("mouseover", mouseoverEvent)
+    document.getElementById(image).addEventListener("mouseout", mouseoutEvent)
+
 function addNewPizza(event) {
     event.preventDefault()
     const form = event.target
