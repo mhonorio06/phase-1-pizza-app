@@ -111,8 +111,8 @@ function dislikeEvent(event){
         event.target.style.width = "400px";
     }
     function mouseoutEvent(event) {
-        event.style.height = "200px";
-        event.style.width = "200px";
+        event.target.style.height = "200px";
+        event.target.style.width = "200px";
     }
     pizzaForm.addEventListener("submit", addNewPizza)
     getPizza();
