@@ -32,15 +32,8 @@
       "id": 5,
       "name": "Buffalo Chicken",
       "image": "https://i0.wp.com/weirdandwildpizza.com/wp-content/uploads/2020/10/MAIN.jpg?w=1480&ssl=1",
-      "likes": 16,
+      "likes": 17,
       "dislikes": 11
-    },
-    {
-      "name": " bbq pizza",
-      "image": "https://hips.hearstapps.com/hmg-prod/images/bbq-pizza-342-1659557925.jpg?crop=0.954xw:0.637xh;0.0204xw,0.278xh&resize=980:*",
-      "likes": 4,
-      "dislikes": 4,
-      "id": 6
     }
   ]
 }
