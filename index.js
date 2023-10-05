@@ -24,10 +24,12 @@ function renderPizza(pizza) {
     card.classList.add('card')
     const likeButtonId = `like-button-${pizza.id}`
     const dislikeButtonId = `dislike-button-${pizza.id}`
+    const image = `image${pizza.id}`
     card.innerHTML = `
     
     <h4> ${pizza.name} </h4>
-    <img src="${pizza.image}" id="image" onmouseover="bgImg()" onmouseout="normImg()"/>
+    <img src="${pizza.image}" id="${image}"
+    />
     <br>
     <p>${pizza.likes}👍 ${pizza.dislikes}👎 Votes</p>
     <button class="like-btn" id="${likeButtonId}">Like</button>
@@ -42,8 +44,12 @@ function renderPizza(pizza) {
     document.getElementById(likeButtonId).addEventListener("click", event => {
         likeEvent(pizza.id)
     })
-
-}
+    document.getElementById(image).addEventListener("mouseover", event => {
+        mouseoverEvent(pizza.id)
+    })
+    document.getElementById(image).addEventListener("mouseout", event => {
+        mouseoutEvent(pizza.id)
+    })
 function addNewPizza(event) {
     event.preventDefault()
     const form = event.target
@@ -65,20 +71,7 @@ function addNewPizza(event) {
         .then(resp => resp.json())
         .then(renderPizza)  
     }
-    function bgImg() {
-        let images = document.querySelectorAll("#image")
-        images.forEach(image => {
-            image.style.height = "350px";
-            image.style.width = "350px";
-        })  
-    }
-    function normImg() {
-        let images = document.querySelectorAll("#image")
-        images.forEach(image => {
-            image.style.height = "200px";
-            image.style.width = "200px";
-        })
-    }
+    
     function likeEvent(event) {
         const pizza = pizzas.find(pizza => pizza.id === event)
         fetch(`${objUrl}/${event}`, {
@@ -86,6 +79,7 @@ function addNewPizza(event) {
             Accept: "application/json",
             "Content-Type": "application/json"
         },
+    
         method: "PATCH",
         body: JSON.stringify({
             likes: pizza.likes + 1,
@@ -115,7 +109,14 @@ function dislikeEvent(event){
         renderPizzas()
     })
 }
-    
+    function mouseoverEvent(event) {
+        event.target.style.height = "400px";
+        event.target.style.width = "400px";
+    }
+    function mouseoutEvent(event) {
+        event.style.height = "200px";
+        event.style.width = "200px";
+    }
     pizzaForm.addEventListener("submit", addNewPizza)
     getPizza();
 

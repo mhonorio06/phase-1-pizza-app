@@ -25,8 +25,8 @@
       "id": 4,
       "name": "Hawaiian",
       "image": "https://img.kidspot.com.au/52lezcwU/w643-h428-cfill-q90/kk/2015/03/hawaiian-pizza-recipe-605894-2.jpg",
-      "likes": 11,
-      "dislikes": 7
+      "likes": 12,
+      "dislikes": 8
     },
     {
       "id": 5,
@@ -48,6 +48,13 @@
       "likes": 4,
       "dislikes": 4,
       "id": 7
+    },
+    {
+      "name": " bbq pizza",
+      "image": "https://hips.hearstapps.com/hmg-prod/images/bbq-pizza-342-1659557925.jpg?crop=0.954xw:0.637xh;0.0204xw,0.278xh&resize=980:*",
+      "likes": 0,
+      "dislikes": 0,
+      "id": 8
     }
   ]
 }
