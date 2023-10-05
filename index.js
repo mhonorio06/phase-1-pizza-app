@@ -44,9 +44,9 @@ function renderPizza(pizza) {
     document.getElementById(likeButtonId).addEventListener("click", event => {
     likeEvent(pizza.id)
     })
-    document.getElementById(image).addEventListener("mouseover", mouseoverEvent)
-    document.getElementById(image).addEventListener("mouseout", mouseoutEvent)
-
+    document.getElementById(image).addEventListener("mouseover", mouseoverEvent())
+    document.getElementById(image).addEventListener("mouseout", mouseoutEvent())
+}
 function addNewPizza(event) {
     event.preventDefault()
     const form = event.target
@@ -115,6 +115,4 @@ function dislikeEvent(event){
         event.target.style.width = "200px";
     }
     pizzaForm.addEventListener("submit", addNewPizza)
-    getPizza();
-
-
+    getPizza()
