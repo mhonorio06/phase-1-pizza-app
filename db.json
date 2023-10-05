@@ -4,8 +4,8 @@
       "id": 1,
       "name": "Supreme",
       "image": "https://i0.wp.com/blog.slicelife.com/wp-content/uploads/2019/06/supreme-pizza-toppings.jpg?w=1200&ssl=1",
-      "likes": 30,
-      "dislikes": 9
+      "likes": 31,
+      "dislikes": 10
     },
     {
       "id": 2,
@@ -32,29 +32,15 @@
       "id": 5,
       "name": "Buffalo Chicken",
       "image": "https://i0.wp.com/weirdandwildpizza.com/wp-content/uploads/2020/10/MAIN.jpg?w=1480&ssl=1",
-      "likes": 13,
-      "dislikes": 10
-    },
-    {
-      "name": " bbq pizza",
-      "image": "https://hips.hearstapps.com/hmg-prod/images/bbq-pizza-342-1659557925.jpg?crop=0.954xw:0.637xh;0.0204xw,0.278xh&resize=980:*",
-      "likes": 10,
-      "dislikes": 18,
-      "id": 6
+      "likes": 16,
+      "dislikes": 11
     },
     {
       "name": " bbq pizza",
       "image": "https://hips.hearstapps.com/hmg-prod/images/bbq-pizza-342-1659557925.jpg?crop=0.954xw:0.637xh;0.0204xw,0.278xh&resize=980:*",
       "likes": 4,
       "dislikes": 4,
-      "id": 7
-    },
-    {
-      "name": " bbq pizza",
-      "image": "https://hips.hearstapps.com/hmg-prod/images/bbq-pizza-342-1659557925.jpg?crop=0.954xw:0.637xh;0.0204xw,0.278xh&resize=980:*",
-      "likes": 0,
-      "dislikes": 0,
-      "id": 8
+      "id": 6
     }
   ]
 }

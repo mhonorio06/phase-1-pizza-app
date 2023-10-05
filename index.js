@@ -26,7 +26,6 @@ function renderPizza(pizza) {
     const dislikeButtonId = `dislike-button-${pizza.id}`
     const image = `image${pizza.id}`
     card.innerHTML = `
-    
     <h4> ${pizza.name} </h4>
     <img src="${pizza.image}" id="${image}"
     />
@@ -44,8 +43,8 @@ function renderPizza(pizza) {
     document.getElementById(likeButtonId).addEventListener("click", event => {
     likeEvent(pizza.id)
     })
-    document.getElementById(image).addEventListener("mouseover", mouseoverEvent())
-    document.getElementById(image).addEventListener("mouseout", mouseoutEvent())
+    document.getElementById(image).addEventListener("mouseover", mouseoverEvent)
+    document.getElementById(image).addEventListener("mouseout", mouseoutEvent)
 }
 function addNewPizza(event) {
     event.preventDefault()
