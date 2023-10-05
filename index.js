@@ -43,14 +43,9 @@ function renderPizza(pizza) {
     document.getElementById(likeButtonId).addEventListener("click", event => {
     likeEvent(pizza.id)
     })
-    document.getElementById(image).addEventListener("mouseover", event => {
-        event.target.style.height = "400px";
-        event.target.style.width = "400px";
-    })
-    document.getElementById(image).addEventListener("mouseout", event => {
-        event.target.style.height = "200px";
-        event.target.style.width = "200px";
-    })
+    document.getElementById(image).addEventListener("mouseover", mouseoverEvent)
+    document.getElementById(image).addEventListener("mouseout", mouseoutEvent)
+
 }
 function addNewPizza(event) {
     event.preventDefault()
@@ -73,7 +68,14 @@ function addNewPizza(event) {
         .then(resp => resp.json())
         .then(renderPizza)  
     }
-    
+    function mouseoverEvent(event) {
+        event.target.style.height = "400px";
+        event.target.style.width = "400px";
+    }
+    function mouseoutEvent(event) {
+        event.target.style.height = "200px";
+        event.target.style.width = "200px";
+    }
     function likeEvent(event) {
         const pizza = pizzas.find(pizza => pizza.id === event)
         fetch(`${objUrl}/${event}`, {
